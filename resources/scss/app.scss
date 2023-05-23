@@ -26,10 +26,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .layoutContainer{
   min-height: 100dvh;
 }
-main{
-    flex-grow: 1;
-    min-height: 100%;
-}
 a {
     text-decoration: none;
 }
@@ -42,14 +38,17 @@ header {
 
     .active {
         font-weight: bold;
-        background-color: violet;
+        background-color: $primary;
         border-radius: 5px;
         color: white;
     }
 }
 
 .singleMovie{
+   min-height: 100%;
     small{
         font-size: 12px;
     }
 }
+
+

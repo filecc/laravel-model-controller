@@ -5,10 +5,10 @@
 @endphp
 @endsection
 @section('content')
-    <div class="container h-100 py-4 singleMovie">
-        <div class="row">
+    <div class="container py-4 singleMovie d-flex justify-content-center align-items-center">
+        <div class="row h-100">
             <div class="col-5">
-                <img class="img-fluid" src="{{$image}}" alt="{{$title}}">
+                <img class="img-fluid shadow" src="{{$image}}" alt="{{$title}}">
             </div>
             <div class="col-7">
                 <div class="row justify-content-between align-items-center py-2 border-bottom gx-0">
@@ -36,6 +36,5 @@
             </div>
 
         </div>
-
     </div>
 @endsection
