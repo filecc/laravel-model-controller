@@ -1,1 +1,49 @@
-@import '~bootstrap/scss/bootstrap';
+/* @use './variables' as *; */
+
+
+/* BOOTSTRAP IMPORT */
+@import "~bootstrap/scss/functions";
+
+
+// variables override
+$primary: rgb(90, 7, 90);
+
+@import "~bootstrap/scss/variables";
+
+// adding custom colors
+$custom-colors: (
+    // custom color "fg-body": $fg-body,
+
+);
+// Merge the maps of colors
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/bootstrap";
+
+.layoutContainer{
+  min-height: 100dvh;
+}
+main{
+    flex-grow: 1;
+    min-height: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    a {
+        font-weight: 300;
+        padding: .2rem .5rem;
+    }
+
+    .active {
+        font-weight: bold;
+        background-color: violet;
+        border-radius: 5px;
+        color: white;
+    }
+}

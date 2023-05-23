@@ -16,13 +16,14 @@
 </head>
 
 <body>
+    <div class="layoutContainer d-flex flex-column justify-content-between">
+        @include('partials.header')
+        <main class="h-100">
+            @yield('content')
+        </main>
+        @include('partials.footer')
 
-    @include('partials.header')
-    <main>
-        @yield('content')
-    </main>
-
-    @include('partials.footer')
+    </div>
 
 </body>
 
