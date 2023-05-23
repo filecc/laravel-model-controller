@@ -8,7 +8,7 @@
                         <img class="img-card-top" src="{{ $movie->image }}" alt="{{ $movie->title }}">
                         <div class="card-body h-100 d-flex flex-column justify-content-between">
                             <h6 class="card-title">{{$movie->title}}</h6>
-                            <a href="#" class="btn btn-outline-primary w-100">Dettagli</a>
+                            <a href="{{route('movie.show', ['id' => $movie->id, str_replace(' ', '-', $movie->title)])}}" class="btn btn-outline-primary w-100">Dettagli</a>
                           </div>
                     </div>
                 </div>

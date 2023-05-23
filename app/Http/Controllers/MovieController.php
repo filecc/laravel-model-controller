@@ -14,6 +14,10 @@ class MovieController extends Controller
     public function about(){
         return view('about');
     }
+    public function show($id){
+        $movie = Movie::findOrFail($id);
+        return view('movie.show', $movie);
+    }
 }
 
 
